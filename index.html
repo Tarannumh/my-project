@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NeuroVision AI</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div>
+        <h1>🧠 NeuroVision AI</h1>
+        <p>Smart Surgical Visualization</p>
+    </div>
+
+    <button class="about-btn">
+        About Project
+    </button>
+</header>
+
+<div class="main">
+
+    <div class="left">
+
+        <div class="card">
+
+            <h2>1. Upload Brain Scan</h2>
+
+            <input type="file" id="scan">
+
+            <button onclick="analyze()">
+                Analyze Scan
+            </button>
+
+        </div>
+
+        <div class="card">
+
+            <h2>Analysis Progress</h2>
+
+            <p id="status">
+                Waiting...
+            </p>
+
+            <div class="progress">
+
+                <div id="bar"></div>
+
+            </div>
+
+        </div>
+
+        <div class="card">
+
+            <h2>Analysis Result</h2>
+
+            <h3 id="result"></h3>
+
+            <p>
+            Region highlighted for doctor review
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="right">
+
+        <div class="card">
+
+            <h2>Brain Analysis Result</h2>
+
+            <div class="scan-box">
+
+                <img id="preview">
+
+                <div class="mark" id="mark"></div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
