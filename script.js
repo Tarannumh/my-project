@@ -60,6 +60,18 @@ if(width>=100){
 
 clearInterval(interval)
 
+// random mark position
+let imgWidth=preview.clientWidth
+let imgHeight=preview.clientHeight
+
+let x=Math.random()*(imgWidth-120)
+
+let y=Math.random()*(imgHeight-120)
+
+mark.style.left=x+"px"
+
+mark.style.top=y+"px"
+
 mark.style.display=
 "block"
 
